@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Újságvári</title>
-    <link rel="icon" type="image/x-icon" href="/res/sg.jpg">
+    <link rel="icon" type="image/x-icon" href="./res/sg.jpg">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>mogus</p>
+    <div id="paperView"></div>
+    <div id="menu">
+        <input type="image" src="./menu.svg" id="misc" class="menuButton">
+        <input type="image" src="./res/ujsg title logo.svg" onclick="mainPage()" id="mainPageButton" class="menuButton">
+
+    </div>
+    <div id="kiadasok">
+        <input type="image" src="./res/info-button.svg" onclick="information()" id="info-button">
+        <br>
+        <input type="checkbox" value="None" id="toggle" name="check"/>
+        
+        <div src="./31e1szpng/" num="32" onclick="getKiadas(this)" class="kiadas_thumbnail">
+            <img src="./31e1szpng/1.png" alt="icon">
+            <div class="panel">
+                <div class="title"><p>ÚjSágvári - 31. évfolyam 1. szám</p></div>
+                <div class="text"></div>
+            </div>
+        </div>
+
+        <div src="./30e2szpng/" num="25" onclick="getKiadas(this)" class="kiadas_thumbnail">
+            <div class="panel">
+                <div class="title"><p>ÚjSágvári - 30. évfolyam 2. szám</p></div>
+                <div class="text"></div>
+            </div>
+            <img src="./30e2szpng/1.png" alt="icon">
+        </div>
+
+        <div src="./30e1szpng/" num="24" onclick="getKiadas(this)" class="kiadas_thumbnail">
+            <img src="./30e1szpng/1.png" alt="icon">
+            <div class="panel">
+                <div class="title"><p>ÚjSágvári - 30. évfolyam 1. szám</p></div>
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="informacio">
+        <h1 id="felelos-kiado">Felelős kiadó:</h1>
+        <p>Dr. Dobi János</p>
+        <h1 id="kiado">Kiadó:</h1>
+        <p>SZTE Gyakorló DÖK</p>
+        <h1 id="szerzoink">Szerzőink:</h1>
+        <p>Lipták Adél &#39;22G<br>Péter-Szabó Anna &#39;22F<br>Marton Enikő &#39;21C<br>Meszes Dominik &#39;21C<br>Vitaszek Dóra &#39;21F<br>Hornok Imre &#39;20C<br>Riki &#39;20D<br>Pavlovits Gitta &#39;20G<br>Sántha Eszter &#39;19A<br>Pap Éva &#39;19C<br>Török Abigél &#39;19C<br>Szász Levente &#39;18A<br>Excalibur  </p>
+        <h1>Honlap:</h1>
+        <p>Öövel Arho &#39;21I</p>
+        <h1 id="lektor">Lektor:</h1>
+        <p>Hornok András</p>
+        <h1 id="szerkeszto">Szerkesztő:</h1>
+        <p>Bagdi Zénó &#39;21C</p>
+        <h1 id="foszerkeszto">Főszerkesztő</h1>
+        <p>Légrádi Regina &#39;22F</p>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html>
